@@ -1,0 +1,822 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.overlay-box
+{
+	width: 100vw;
+	height: 550px;
+	background-image:linear-gradient(rgba(0,0,0,80%),rgba(0,0,0,80%)), url(fotos/Teste.jpg);
+	position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.overlay-box div{
+	position: relative;
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+	top: 190px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#topo
+{
+	max-width: 100%;
+	width: 800px;
+	margin: 20px;
+	
+}
+.teste
+{
+	font-size: 50px;
+	position: absolute;
+	top: 100px;
+	left: 150px;
+	font-weight: bold;
+}
+.logo
+{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	font-size: 25px;
+	font-family: cursive;
+	color: #fff;
+	
+	margin-left:80px;
+	margin-top:15px;
+}
+.menu 
+{
+	display: block;	
+}
+.menu ol
+{
+	margin-top:20px;
+	list-style: none;
+	float: left;
+	width: 100%;
+	position: absolute;
+	left: 250px;
+float: left;
+top: 10px;
+}
+.menu ol li 
+{
+	display:inline;
+   padding: 10px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+.menu ol li a {
+	
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+.menu ol li a:hover
+{
+	color: #FFF;
+	text-decoration: underline ;
+}
+
+/*sessao do sobre */
+.sobre{
+	margin: -20px;
+	background-color: rgb(35, 61, 95);
+	padding-top: 58px;
+	height: 420px;
+}
+.sobre img 
+{
+	width:180px;
+	height:180px;
+	/*float: left;*/
+	margin: 5px;
+    position: relative;
+    left: 550px;
+	border-radius: 100%;
+	border: 8px solid white;
+	object-fit: cover;
+}
+
+ .sobre h2 
+ {
+  color: rgb(255, 248, 248);
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+ }
+.sobre button
+{
+	border: 1px solid #000;
+ 	border-radius: 5px;
+ 	background-color: rgb(59, 130, 223);
+ 	color: #fff;
+ 	outline: none;
+	 font-size: 16px;
+	 padding: 10px;
+	 left: 10px;
+}
+.sobre button a 
+{
+	color: #fff;
+	text-decoration: none;
+}
+.sobre p 
+{
+	color: #fff;
+	text-indent: 5px;
+	text-align: center;
+	padding: 20px;
+
+	
+}
+
+/*sessao do portifolio*/
+.Portifolio{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+.portifolio{
+	background-color: rgb(24, 23, 23);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+}
+
+.portifolio figure{
+	width:30%;
+	height: 300px;
+	margin-top: 20px;
+	margin:10px;
+	position: relative;
+	
+}
+
+.portifolio figure figcaption{
+	text-align: center;
+	color:white;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background-image: linear-gradient(rgba(0,0,0,60%),rgba(0,0,0,60%));
+	display: none;
+	align-items: center;
+	justify-content: center;
+	transition: background-image 14s ease-in-out;
+	
+	
+}
+.portifolio figure:hover figcaption{
+	display: flex;
+}
+.portifolio figure img{
+	width:100%;
+	
+}
+.tem
+{
+	background-color:  rgb(24, 23, 23);
+	color: #FFF;
+	text-align: center;
+	font-size: 40px;
+}
+.tem-p
+{
+	font-size:18px;
+}
+ 
+.portifolio img 
+{ 
+	width:250px;
+	height:300px;
+}
+.foto1 figcaption
+{
+	color: #fff;
+	top: -200px;
+	position: relative;
+	color: black;;
+	padding: 10px;
+	font-size: 25px;
+	opacity: 0;
+	font-weight: bold;
+} 
+.foto1 figcaption:hover{
+	opacity: 1;
+	transition: 3s;	
+}
+.foto2 figcaption
+{
+	color: #fff;
+	top: -200px;
+	position: relative;
+	color: black;;
+	padding: 10px;
+	font-size: 25px;
+	opacity: 0;
+	font-weight: bold;
+} 
+.foto2 figcaption:hover{
+opacity: 1;
+transition: 3s;
+}
+.foto3 figcaption
+{
+	color: #fff;
+	top: -200px;
+	position: relative;
+	color: rgb(255, 250, 250);;
+	padding: 10px;
+	font-size: 25px;
+	opacity: 0;
+	font-weight: bold;
+} 
+.foto3 figcaption:hover{
+opacity: 1;
+transition: 3s;
+}
+.foto4 figcaption
+{
+	color: #fff;
+	top: -280px;
+	position: relative;
+	color: rgb(255, 250, 250);;
+	padding: 10px;
+	font-size: 25px;
+	opacity: 0;
+	font-weight: bold;
+} 
+.foto4 figcaption:hover{
+opacity: 1;
+transition: 3s;
+}
+.foto5 figcaption
+{
+	color: #fff;
+	top: -300px;
+	position: relative;
+	color: rgb(255, 255, 255);;
+	padding: 10px;
+	font-size: 25px;
+	opacity: 0;
+	font-weight: bold;
+} 
+.foto5 figcaption:hover{
+opacity: 1;
+transition: 3s;
+}
+.foto5:hover{
+	opacity: 90%;
+	overflow: wrap;
+}
+.foto6 figcaption
+{
+	color: #fff;
+	top: -300px;
+	position: relative;
+	color: rgb(255, 253, 253);;
+	padding: 10px;
+	font-size: 25px;
+	opacity: 0;
+	font-weight: bold;
+} 
+.foto6 figcaption:hover{
+opacity: 1;
+transition: 3s;
+}
+.foto6:hover{
+	opacity: 90%;
+	overflow: wrap;
+}
+/* sessao de habilidades */
+	.skills{
+		width: 100%;
+		max-width: 900px;
+		padding: 0 20px;
+		position: relative;
+		left: 40px;
+	}
+	.skills-name{
+		font-size: 18px;
+		font-weight: 700;
+		color: #f1f1f1;
+		text-transform: uppercase;
+		margin: 20px 0;
+	}
+.skills-bar{
+	height: 14px;
+	background: #282828;
+	border-radius: 3px;
+}
+.skills-per{
+	height: 14px;
+	background: #d13639;
+	border-radius: 3px;
+	position: relative;
+	animation: fillBars 2.5s 1;
+}
+.skills-per::before{
+	content: attr(per);
+	position: absolute;
+	padding: 4px 6px;
+	background: #f1f1f1;
+	border-radius: 4px;
+	font-size: 12px;
+	top: -35px;
+	right: 0;
+	transform: translateX(50%);
+}
+.skills-per::after{
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background: #f1f1f1;
+	top: -20px;
+	right: 0;
+	transform: translateX(50%) rotate(45deg);
+	border-radius: 2px;
+}
+@keyframes filBars{
+	from{
+		width: 0;
+	}
+to{
+	width: 100%;
+}}
+.habilidades{
+ 
+	background-color: rgb(35, 61, 95);
+	height:530px;
+}
+.habilidades h2 
+{
+	color: rgb(255, 255, 255);
+  top: 5px;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+}
+.habilidades p
+{ 
+	color: rgb(255, 255, 255);
+	text-align: justify;
+	text-indent: 5px;
+	padding: 5px;
+}
+/* sesao para aprimeira habilidade ser*/
+.habilida
+{
+	width: 255px;
+	height:310px;
+	background:rgb(34, 55, 83); 
+	box-shadow: 1px 1px 5px #000;
+	margin: 35px;
+	position: relative;
+	top: -15px;
+	padding: 5px;
+}
+ .habilida img
+ {
+ width: 265px;
+ height: 180px;
+ position: relative;
+ left: -5px;
+ top: -4px;
+ box-shadow: 1px 1px 5px #000;
+ }
+ 
+/* sessao da segunda habilidade*/
+ .habilida2
+ {
+	width: 255px;
+	height:310px;
+	background:rgb(34, 55, 83); 
+	box-shadow: 1px 1px 5px #000;
+	margin: 35px;
+	position: relative;
+	top: -369px;
+	padding: 5px;
+	left: 330px;
+ }
+ .habilida2 img
+ {
+ width: 265px;
+ height: 180px;
+ box-shadow: 1px 1px 5px #000;
+ position: relative;
+ left: -5px;
+ top: -4px;
+ }
+ .habilida3
+{
+	width: 255px;
+	height: 310px;
+	background:rgb(34, 55, 83); 
+	box-shadow: 1px 1px 5px #000;
+	margin: 35px;
+	position: relative;
+	top: -725px;
+	padding: 5px;
+	left: 660px;
+   
+}
+.habilida3 img
+{
+width: 265px;
+height: 180px;
+position: relative;
+left: -5px;
+top: -4px;
+box-shadow: 1px 1px 5px #000;
+} 
+/* sessao de musica */
+.musicas{
+	background-color: rgb(35, 61, 95);
+	height: 500px;
+}
+.musicas h2 
+{
+	color: rgb(255, 255, 255);
+	text-align: center;	
+	padding: 10px;
+	font-size: 40px;
+}
+.music1
+{
+	margin: 35px;
+	position: relative;
+	top: -30px;
+	padding: 5px;
+	left: -10px;	
+}
+.music2
+{
+	margin: 35px;
+	position: relative;
+	top: -171px;
+	padding: 5px;
+	left: 355px;	
+}
+.music3
+{
+	margin: 35px;
+	position: relative;
+	top: -311px;
+	padding: 5px;
+	left: 715px;	
+}
+.music4
+{
+	margin: 35px;
+	position: relative;
+	top: -350px;
+	padding: 5px;
+	left: -10px;	
+}
+.music5
+{
+	margin: 35px;
+	position: relative;
+	top: -490px;
+	padding: 5px;
+	left: 335px;	
+}
+.music6
+{
+	margin: 35px;
+	position: relative;
+	top: -630px;
+	padding: 5px;
+	left: 715px;	
+}
+.musicas audio
+{
+	width: 300px;
+	margin: 5px;
+	padding: 5px;
+}
+.musicas  p{
+	color: white;	
+}
+ /*  sessao de filmes */
+ .filmes
+ {
+	background-color: rgb(35, 61, 95);
+	height: 500px;
+ }
+ .filmes h2 
+ {
+ color: rgb(255, 255, 255);
+ text-align: center;
+ font-size: 40px;
+ }
+ .filme1
+ {
+	margin: 35px;
+	position: relative;
+	top: -20px;
+	padding: 5px;
+	left: 35px;
+ }
+ .filme2
+ {
+	margin: 35px;
+	position: relative;
+	top: -447px;
+	padding: 5px;
+	left: 435px;
+ }
+ .filme3
+ {
+	margin: 35px;
+	position: relative;
+	top: -875px;
+	padding: 5px;
+	left: 820px;
+ }
+ .filmes p
+ {
+	 color: #FFF;
+	 padding: 5px;
+ }
+ .filmes iframe 
+{
+	width: 300px;
+}
+ /* sessao para aba  de servicos*/
+ .servicos
+ {
+	 background-color: rgb(35, 61, 95);
+	 height: 500px;
+ }
+ .servicos h2 
+ {
+ 	color: rgb(255, 255, 255);
+ 	text-align: center;
+	
+ }
+ .servicos p
+ {
+	 color: #FFF;
+	 padding: 10px;
+ }
+ /* servicos de web design*/
+ .serv
+ {
+	width: 255px;
+	height:265px;
+	background:rgb(34, 55, 83); 
+	box-shadow: 1px 1px 5px #000;
+	margin: 35px;
+	position: relative;
+	top: -15px;
+	padding: 5px;
+	left: 150px;
+ }
+ .serv h2
+ {
+	 text-align: center;
+	 color: #FFF;
+ }
+ .serv p
+{
+	padding: 5px;
+	color: #FFF;
+	opacity: 0;
+
+}
+.serv p:hover{
+	opacity: 1;
+	transition: 3s;
+}
+ .serv img
+ {
+ width: 100px;
+ height: 100px;
+ position: relative;
+ left: 75px;
+ top: 5px;
+ border-radius: 50%;
+ box-shadow: 1px 1px 5px #000;
+ }
+ 
+/* servicos de Redes de computadores*/
+ .serv2
+ {
+	width: 255px;
+	height:265px;
+	background:rgb(34, 55, 83); 
+	box-shadow: 1px 1px 5px #000;
+	margin: 35px;
+	position: relative;
+	top: -327px;
+	padding: 5px;
+	left:500px ;	
+ }
+ .serv2 h2
+ {
+	 text-align: center;
+	 color: #FFF;
+ }
+ .serv2 p
+{
+	padding: 5px;
+	color: #FFF;
+    opacity: 0;
+}
+ .serv2 img
+ {
+ width: 100px;
+ height: 100px;
+ position: relative;
+ left: 75px;
+ top: 5px;
+ border-radius: 50%;
+ box-shadow: 1px 1px 5px #000;
+ }
+ .serv2 p:hover{
+	opacity: 1;
+	transition: 2s;
+}
+/* servicos de prototipos de web sites e sistemas*/
+.serv3
+{
+	width: 255px;
+	height:265px;
+	background:rgb(34, 55, 83); 
+	box-shadow: 1px 1px 5px #000;
+	margin: 35px;
+	position: relative;
+	top: -637px;
+	padding: 5px;
+	left: 860px;
+}
+.serv3 h2
+{
+	text-align: center;
+	color: #FFF;
+}
+.serv3 p
+{
+   padding: 5px;
+   color: #FFF;
+  opacity: 0;
+}
+.serv3 img
+{
+width: 100px;
+height: 100px;
+position: relative;
+left: 75px;
+top: 5px;
+border-radius: 50%;
+box-shadow: 1px 1px 5px #000;
+} 
+.serv3 p:hover{
+	opacity: 1;
+	transition: 2s;
+}
+ /* sessao de aba contacto*/
+.fundo
+{
+	background-color: rgb(34, 33, 33);
+	width: 650px;
+	height: 530px;
+	position: relative;
+	left: 350px;
+	border-radius: 5px;
+}
+
+ .contacto
+ {
+	 background-color: rgb(24, 23, 23);
+	 height: 650px;	 
+ }
+ .contacto h2  
+ {
+ 	color: rgb(255, 255, 255);
+	 font-size: 40px;
+	 text-align: center;
+	 padding: 8px;
+ }
+ .contacto p 
+ {
+	 position: relative;
+	 color: #EEE;
+	 left: 290px;
+	 margin: 5px;
+ }
+ 
+ .contacto form input
+ { 
+	 position: relative;
+	 left: 50px;
+	 color: #000;
+	 margin: 10px;
+ }
+ .contacto form textarea{
+	position: relative;
+	left: 53px;
+	margin: 5px;
+	border-radius: 5px;
+}
+ .contacto form label,textarea,button{
+	 position: relative;
+	 left: 500px;
+	 padding: 5px;
+	 margin: 5px;
+ }
+ .contacto form button{
+	position: relative;
+	left: 50px;
+	padding: 2px;
+	margin: 5px;
+	width: 530px;
+}
+ .contacto form label 
+ {
+	 color: #fff;
+ 	font-size: 16px;
+ }
+ .contacto form input[type="text"], input[type="email"], input[type="tel"]
+ {
+    border:1px solid #000;
+	background: #fff;
+	outline:none;
+	height:20px;
+	color: rgb(0, 0, 0);
+	font-size:16px;
+	padding: 10px;
+	width: 500px;
+	height: 35px;
+	border-radius: 5px;
+ }
+ .contacto form textarea 
+ {
+ 	border: 1px solid #000;
+ 	outline: none;
+ 	padding: 20px;
+	 font-size: 16px;
+	 width: 480px;
+	 
+ }
+ ::placeholder{
+	 color: #000;
+ }
+ .contacto form button 
+ {
+ 	border: 1px solid #000;
+ 	border-radius: 5px;
+ 	background-color:rgb(59, 130, 223);
+ 	color: #fff;
+ 	outline: none;
+	 font-size: 16px;
+	 padding: 20px;
+	 border-radius: 40px;
+ }
+ .contacto form button:hover
+ {
+ 	background-color: rgb(103, 140, 209);
+ 	color: #fff;
+ 	transition: 0.2s;
+ }
+
+ footer{
+	background-color: rgb(34, 33, 33);
+	
+ }
+ footer article{
+	position: relative;
+	left: 120px;
+	top: 35px;
+	color: white;
+}
+ article, .icones{
+	 position: relative;
+	 left: 890px;
+	 color: white;
+	 top: -5px;
+ }
+ .icones, a img
+ {
+	width:50px; 
+	height:50px;
+	margin: 10px;
+ }
+ 
